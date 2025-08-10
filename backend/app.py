@@ -40,8 +40,8 @@ def analyze_text():
     emo_sorted = emo.sort_values(by='Percentage', ascending=False)
     emo_sorted = emo[emo['Percentage'] > 1]
 
-    sentiment_score = emo.loc[emo['Percentage'].idxmax()]['Emotion']
-    sentiment_label = emo.loc[emo['Percentage'].idxmax()]['Percentage']
+    sentiment_score = emo.loc[emo['Percentage'].idxmax()]['Percentage']
+    sentiment_label = emo.loc[emo['Percentage'].idxmax()]['Emotion']
 
     emotions = dict(zip(emo_sorted['Emotion'], emo_sorted['Percentage']))
 
