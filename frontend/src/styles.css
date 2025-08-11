@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 3rem auto;
   padding: 2rem;
   background: white;
@@ -19,13 +19,14 @@ h1 {
   text-align: center;
 }
 
-textarea {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  resize: vertical;
+h2 {
+  color: #00796b;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 button {
@@ -36,19 +37,24 @@ button {
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 button:hover {
   background-color: #4a148c;
 }
 
-.result {
-  margin-top: 2rem;
+textarea, input[type="file"] {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
-.result h2 {
-  color: #00796b;
+.result {
+  margin-top: 2rem;
 }
 
 .result ul {
@@ -61,4 +67,17 @@ button:hover {
   margin: 0.5rem 0;
   padding: 0.5rem;
   border-radius: 6px;
+}
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6a1b9a;
+  margin-top: 1rem;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
 }
